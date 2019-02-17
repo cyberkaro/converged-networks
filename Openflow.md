@@ -36,6 +36,21 @@ styczeń 2013r. firma NEC przedstawiła wirtualny przełącznik dla systemu Wind
 wrzesień 2016r. ONF wydaje wersję 1.6 - jednak dostępna tylko dla członków fundacji
 Obecnie ogólnodostępna wersja to 1.5.1
 
+### Porównanie efektywności MPLS i OpenFlow
+Skrócony opis MPLS
+MPLS jest to protokół opracowany warstwy 2,5 modelu ISO/OSI przez Internet Egineering Task Force pod koniec lat 90-tych XX wieku. W założeniach nie miał zastępować wykorzystywanych protokołów komunikacyjnych, ale być dla nich uzupełnieniem. Może on  współpracować z TCP/IP, ATM, Frame Relay i SONET. Łączy w sobie zalety warstwy łącza danych (wydajność i szybkość) i warstwy sieciowej (skalowalność). Dostarcza on bogatszy zestaw narzędzi do zarządzania siecią i inżynierii ruchu, co umożliwia przesyłanie pakietów stałą trasą zdefiniowaną klasycznymi protokołami routingu, a ponadto umożliwia tworzenie wirtualnych sieci prywatnych.
+
+Porównanie wydajności OpenFlow i MPLS
+-Przepustowość sieci
+Dla obu protokołów wartość przepustowości jest do siebie zbliżona ze wskazaniem w stronę OpenFlow, w obu przypadkach sieć zachowuje się przewidywalnie pod względem przepustowości.
+- Zmienność opóźnienia
+Protokół OpenFlow zapewnia nieznacznie mniejszy jitter niż MPLS w przypadku przesyłania danych jednym jak i większą ilością portów.
+-Utrata Pakietów
+MPLS zapewnia wyższą skuteczność w dostarczaniu pakietów niż sieci oparte o OpenFlow.
+Opóźnienie
+-OpenFlow zapewnia niższe opóźnienie dla dużych pakietów danych względem MPLS, różnica jest zauważalna.
+{Autor rozszerzenia zagadnienia: Grzegorz Wiltos}
+
 ### Podsumowując
 Z powodu braku otwartego standardu dzięki któremu byłby dostęp do płaszczyzny danych dzisiejsze urządzenia sieciowe podobne są do systemów klasy mainframe. Z pomocą przychodzi wyżej wymieniony protokół którego zadanie polega na przeniesieniu funkcji sterowania zamkniętych urządzeń producentów do lokalnie zarządzającego oprogramowania otwartego. Oznacza to, że protokół OpenFlow pozwala aby trasa pakietów z pomocą sieci telekomunikacyjnej była definiowana przy użyciu oprogramowania działającego w kontrolerze.  Odseparowanie sterowania od przekazywania pakietów daje możliwość bardziej zaawansowanego zarządzania ruchem niż w przypadku wykorzystania tylko  mechanizmów ACL (list kontroli dostępu) czy protokołów trasowania. 
 
@@ -48,3 +63,5 @@ Z powodu braku otwartego standardu dzięki któremu byłby dostęp do płaszczyz
 [Artykuł](https://www.computerworld.pl/news/OpenFlow-i-sieci-sterowane-programowo,374742.html)
 
 [Wikipedia](https://en.wikipedia.org/wiki/OpenFlow)
+
+[Projekt inżynierski](http://www.ia.pw.edu.pl/~mkamola/Fijas2013/praca_inzynierska_fijas.pdf)
