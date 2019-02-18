@@ -64,6 +64,7 @@ Swoje projekty przysyłać jako propozycje zmian do tego projektu [(pull request
 (Oleksandr Sokoliuk)
 
 ### [Protokół RSVP](RSVP.md)
+(Dawid Stawski)
 
 ### [Model Differentiated Services](Model%20Differentiated%20Services.md)
 (Kinga Bik)
